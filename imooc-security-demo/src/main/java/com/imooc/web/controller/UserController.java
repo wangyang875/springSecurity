@@ -2,10 +2,13 @@ package com.imooc.web.controller;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.imooc.dto.User;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.jws.soap.SOAPBinding;
+import javax.sound.midi.Soundbank;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +17,7 @@ import java.util.List;
 public class UserController {
     @GetMapping("/user")
     @JsonView(User.UserSimpleView.class)
+    @ApiOperation(value = "查询用户列表")
     public List<User> getUser() {
         List<User> list=new ArrayList<>();
         list.add(new User());
@@ -30,6 +34,7 @@ public class UserController {
     }
 
     /**
+     * 创建用户
      * @RequestBody注解负责将请求中的json数据绑定到user中
      * @valid是对请求的数据的校验，一般配合User类中的注解如@notnull、@notBlank等，这种情况下检验一旦不通过就会直接请求失败，
      * 不会进入到方法题里面去
@@ -49,4 +54,26 @@ public class UserController {
         System.out.println(user.getBirthday());
         return user;
     }
+    @PutMapping("/user/{id}")
+    public User update(@Valid @RequestBody User user, BindingResult errors){
+        if (errors.hasErrors()){
+            errors.getAllErrors().stream().forEach(error-> {
+//                        FieldError fieldError= (FieldError) error;
+//                        String message=fieldError.getField()+" "+fieldError.getDefaultMessage();
+                        System.out.println(error.getDefaultMessage());
+                    }
+                    );
+        }
+        System.out.println(user.getId());
+        System.out.println(user.getUsername());
+        System.out.println(user.getPassword());
+        user.setId("1");
+        System.out.println(user.getBirthday());
+        return user;
+    }
+    @DeleteMapping("/user/{id}")
+    public void delete(@PathVariable String id){
+        System.out.println(id);
+    }
+
 }
