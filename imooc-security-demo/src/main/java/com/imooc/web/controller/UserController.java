@@ -37,7 +37,7 @@ public class UserController {
      * 创建用户
      * @RequestBody注解负责将请求中的json数据绑定到user中
      * @valid是对请求的数据的校验，一般配合User类中的注解如@notnull、@notBlank等，这种情况下检验一旦不通过就会直接请求失败，
-     * 不会进入到方法题里面去
+     * 不会进入到方法体里面去
      * 加入BindingResult之后就算校验不通过也会进入方法体里面去,相应的错误信息也会放到BindingResult这个对象里面
      * @param user
      * @return
