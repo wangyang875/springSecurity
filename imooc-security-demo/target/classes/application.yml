@@ -10,6 +10,10 @@ spring:
     database: 0
     host: localhost
     port: 6379
-security:
-  basic:
-    enabled: false
+#security:
+#  basic:
+#    enabled: false
+#imooc:
+#  security:
+#    browser:
+#      loginPage: /imooc-login.html

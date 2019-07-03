@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a264830e-44ea-4944-9d8e-61f17880d308" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-security-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-security-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-security-demo/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-security-demo/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/imooc-security-core/target/" />
@@ -21,20 +20,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-104">
-              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            <state relative-caret-position="306">
+              <caret line="18" column="19" selection-start-line="15" selection-start-column="6" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/wireMock/MockServer.java">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/securityProperties/SecurityProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="204">
+              <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+              <folding>
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/securityProperties/BrowserProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+              <folding>
+                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/SecurityCoreConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,19 +69,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/mock/response/01.txt">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/BrowserSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="289">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/async/QueueListener.java">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/BrowserSecurityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+            <state relative-caret-position="179">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,26 +90,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/async/MockQueue.java">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/support/SimpleResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="85">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#118#119#0" expanded="true" />
+                <element signature="e#148#149#0" expanded="true" />
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/async/DeferredResultHolder.java">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/resources/resources/imooc-login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="125">
+              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,46 +129,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/DemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="2" selection-start-line="10" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/validator/MyConstraintValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,6 +146,7 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -168,7 +171,6 @@
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/validator/MyConstraint.java" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/validator/MyConstraintValidator.java" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserControllerTest.java" />
-        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/async/DeferredResultHolder.java" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/async/MockQueue.java" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/async/AsyncController.java" />
@@ -178,6 +180,16 @@
         <option value="$PROJECT_DIR$/imooc-security-demo/pom.xml" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/mock/response/01.txt" />
         <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/wireMock/MockServer.java" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/mock/response/01.txt" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/imooc-login.html" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/resources/imooc-login.html" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/support/SimpleResponse.java" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/BrowserSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/securityProperties/BrowserProperties.java" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/BrowserSecurityController.java" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/SecurityCoreConfig.java" />
+        <option value="$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/securityProperties/SecurityProperties.java" />
       </list>
     </option>
   </component>
@@ -191,6 +203,20 @@
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="imooc-security" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="imooc-security" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="imooc-security" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="imooc-security-demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
@@ -210,10 +236,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="4" />
-    <option name="y" value="3" />
+    <option name="x" value="-14" />
+    <option name="y" value="47" />
     <option name="width" value="1454" />
-    <option name="height" value="862" />
+    <option name="height" value="864" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -221,7 +247,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,16 +298,55 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="imooc" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-security-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="securityProperties" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-security-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-security-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc-security-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -294,16 +359,30 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561776794926" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562160243060" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imooc-security-browser/target/imooc-security-browser-1.0.0-SNAPSHOT.jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.imooc.security" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\YaphetS\Documents\springSecurity\imooc-security-demo\src\main\resources\resources" />
+      <recent name="C:\Users\YaphetS\Documents\springSecurity\imooc-security-demo\src\main\resources" />
+    </key>
+  </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -315,7 +394,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MockServer">
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
     <configuration name="MockServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.imooc.wireMock.MockServer" />
       <module name="imooc-security-demo" />
@@ -325,22 +404,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.whenCreateuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="imoocsecuritydemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.imooc.web.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.imooc.web.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.imooc.web.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="whenCreateuccess" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -373,6 +436,19 @@
       <option name="MAIN_CLASS_NAME" value="com.imooc.web.controller.UserControllerTest" />
       <option name="METHOD_NAME" value="whenUpdateuccess" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="imooc-security-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.imooc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.imooc.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -454,11 +530,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoApplication (1)" />
         <item itemvalue="Application.MockServer" />
         <item itemvalue="Spring Boot.DemoApplication" />
         <item itemvalue="JUnit.UserControllerTest.whenDeleteSuccess" />
         <item itemvalue="JUnit.UserControllerTest.whenUpdateuccess" />
-        <item itemvalue="JUnit.UserControllerTest.whenCreateuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -480,7 +556,9 @@
       <workItem from="1561597068195" duration="101000" />
       <workItem from="1561638529491" duration="4431000" />
       <workItem from="1561722201427" duration="6042000" />
-      <workItem from="1561773047325" duration="3526000" />
+      <workItem from="1561773047325" duration="5769000" />
+      <workItem from="1561985148581" duration="2908000" />
+      <workItem from="1562125914475" duration="5242000" />
     </task>
     <servers />
   </component>
@@ -517,13 +595,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28173000" />
+    <option name="totallyTimeSpent" value="38566000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26647565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27363896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -533,19 +620,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28167117" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28167117" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32884097" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32884097" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32884097" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.32884097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -564,36 +652,28 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/imooc-security-app/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-browser/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-security-core/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
           <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/dto/UserQueryCondition.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -641,16 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/immoc/security/browser/BrowserSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -658,13 +728,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -690,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/async/DeferredResultHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="238">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -720,15 +783,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+        <state relative-caret-position="-104">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/resources/mock.response.01.txt" />
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/mock/response/01.txt" />
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/resources/mock/response/01.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/wireMock/MockServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-browser/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/async/QueueListener.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -740,37 +828,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/DemoApplication.java">
+    <entry file="file://$PROJECT_DIR$/imooc-security-browser/src/main/java/com/immoc/security/browser/BrowserSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-end-line="10" selection-end-column="15" />
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        <state relative-caret-position="102">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/mock/response/01.txt">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="306">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/wireMock/MockServer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE-sources.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="98">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="75" column="50" lean-forward="true" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/support/SimpleResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/resources/resources/imooc-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/securityProperties/BrowserProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/BrowserSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="19" selection-start-line="15" selection-start-column="6" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/web/controller/BrowserSecurityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/SecurityCoreConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imooc-security-demo/src/main/java/com/imooc/security/securityProperties/SecurityProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
           </folding>
         </state>
       </provider>

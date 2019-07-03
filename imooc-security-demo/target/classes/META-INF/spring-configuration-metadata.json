@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.imooc.security.securityProperties.SecurityProperties",
+      "name": "imooc.security",
+      "type": "com.imooc.security.securityProperties.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.imooc.security.securityProperties.SecurityProperties",
+      "name": "imooc.security.browser-properties",
+      "type": "com.imooc.security.securityProperties.BrowserProperties"
+    }
+  ]
+}
