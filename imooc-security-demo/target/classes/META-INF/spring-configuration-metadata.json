@@ -10,7 +10,7 @@
   "properties": [
     {
       "sourceType": "com.imooc.security.securityProperties.SecurityProperties",
-      "name": "imooc.security.browser-properties",
+      "name": "imooc.security.browser",
       "type": "com.imooc.security.securityProperties.BrowserProperties"
     }
   ]

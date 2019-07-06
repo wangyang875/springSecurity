@@ -16,4 +16,4 @@ spring:
 imooc:
   security:
     browser:
-      loginPage: /imooc-login.html
+      loginPage: /imooc-login(withValidateCode).html

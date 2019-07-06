@@ -13,7 +13,7 @@ spring:
 #security:
 #  basic:
 #    enabled: false
-#imooc:
-#  security:
-#    browser:
-#      loginPage: /imooc-login.html
+imooc:
+  security:
+    browser:
+      loginPage: /imooc-login(withValidateCode).html
