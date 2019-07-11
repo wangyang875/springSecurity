@@ -29,7 +29,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/authentication/require", securityProperties.getBrowser().getLoginPage()
-                        , "/code/image").permitAll()//表示这个url不需要验证
+                        , "/code/*").permitAll()//表示这个url不需要验证
                 .anyRequest()
                 .authenticated()
                 .and()

@@ -1,6 +1,9 @@
 package com.imooc.web.controller;
 
 import com.imooc.validator.ImageCode;
+import com.imooc.validator.SmsCode;
+import com.imooc.validator.sms.DefaultSmsCodeSender;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.connect.web.HttpSessionSessionStrategy;
 import org.springframework.social.connect.web.SessionStrategy;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +23,10 @@ import java.util.Random;
 
 @RestController
 public class ValidateCodeController {
-    public static final String SESSION_KEY = "SESSIONKEY_IMAGE_CODE";
+    public static final String SESSION_KEY = "SESSIONKEY_CODE";
     private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();//session的工具类，用来操作session
+    @Autowired
+    DefaultSmsCodeSender defaultSmsCodeSender;
 
     @GetMapping("/code/image")
     public void createCode(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -30,6 +35,26 @@ public class ValidateCodeController {
         sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_KEY, imageCode);
         //把图片写入到响应的输出流里面
         ImageIO.write(imageCode.getImage(), "JPEG", response.getOutputStream());
+    }
+
+    @GetMapping("/code/sms")
+    public void createSmsCode(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        SmsCode smsCode = createmsCode();
+        //拿到当前请求的session，并把验证码存到session里面去
+        sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_KEY, smsCode);
+        //模拟进行发送短信验证码的操作
+        String mobile = request.getParameter("mobile");
+        defaultSmsCodeSender.send(mobile, smsCode.getCode());
+    }
+
+    private SmsCode createmsCode() {
+        Random random = new Random();
+        String sRand = "";
+        for (int i = 0; i < 4; i++) {
+            String rand = String.valueOf(random.nextInt(10));
+            sRand += rand;
+        }
+        return new SmsCode(sRand, 80);
     }
 
     private ImageCode CreateImageCode(HttpServletRequest request) {
