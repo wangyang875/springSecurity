@@ -1,8 +1,9 @@
 package com.imooc.security;
 
-import com.imooc.handler.ImoocAuthenticationHandler;
+import com.imooc.handler.ImoocAuthenticationFailureHandler;
 import com.imooc.security.securityProperties.SecurityProperties;
 import com.imooc.validator.ValidateCodeFilter;
+import com.imooc.validator.sms.SmsCodeFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -15,13 +16,19 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     SecurityProperties securityProperties;
+    @Autowired
+    SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
+    @Autowired
+    ImoocAuthenticationFailureHandler imoocAuthenticationFailureHandler;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        ValidateCodeFilter validateCodeFilter=new ValidateCodeFilter();
-        ImoocAuthenticationHandler imoocAuthenticationHandler=new ImoocAuthenticationHandler();
-        validateCodeFilter.setAuthenticationFailureHandler(imoocAuthenticationHandler);
-        http.addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)//UsernamePasswordAuthenticationFilter之前配置我们自己定义的用于校验验证码的过滤器
+        ValidateCodeFilter validateCodeFilter = new ValidateCodeFilter();
+        validateCodeFilter.setAuthenticationFailureHandler(imoocAuthenticationFailureHandler);
+        SmsCodeFilter smsCodeFilter=new SmsCodeFilter();
+        smsCodeFilter.setAuthenticationFailureHandler(imoocAuthenticationFailureHandler);
+        http.addFilterBefore(smsCodeFilter,UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)//UsernamePasswordAuthenticationFilter之前配置我们自己定义的用于校验验证码的过滤器
                 .formLogin()//表单登录界面的形式认证
                 .loginPage("/authentication/require")//自己指定表单验证的页面
                 .loginProcessingUrl("/authentication/form")//默认是处理/login 这个url，这里是自定义进行验证的url,即自定义的表单对应的url
@@ -33,6 +40,7 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest()
                 .authenticated()
                 .and()
-                .csrf().disable();//先把springsecurity的防止跨站请求服务的功能关掉
+                .csrf().disable()//先把springsecurity的防止跨站请求服务的功能关掉
+                .apply(smsCodeAuthenticationSecurityConfig);//等于把我在smsCodeAuthenticationSecurityConfig里面写的配置接着写在下面
     }
 }

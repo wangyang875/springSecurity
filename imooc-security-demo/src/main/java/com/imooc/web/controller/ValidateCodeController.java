@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.connect.web.HttpSessionSessionStrategy;
 import org.springframework.social.connect.web.SessionStrategy;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.ServletWebRequest;
 
@@ -23,7 +24,8 @@ import java.util.Random;
 
 @RestController
 public class ValidateCodeController {
-    public static final String SESSION_KEY = "SESSIONKEY_CODE";
+    public static final String SESSION_IMAGE_KEY = "SESSIONKEY_IMAGE_CODE";
+    public static final String SESSION_MS_KEY = "SESSIONKEY_MS_CODE";
     private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();//session的工具类，用来操作session
     @Autowired
     DefaultSmsCodeSender defaultSmsCodeSender;
@@ -32,7 +34,7 @@ public class ValidateCodeController {
     public void createCode(HttpServletRequest request, HttpServletResponse response) throws IOException {
         ImageCode imageCode = CreateImageCode(request);
         //拿到当前请求的session，并把验证码存到session里面去
-        sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_KEY, imageCode);
+        sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_IMAGE_KEY, imageCode);
         //把图片写入到响应的输出流里面
         ImageIO.write(imageCode.getImage(), "JPEG", response.getOutputStream());
     }
@@ -41,7 +43,7 @@ public class ValidateCodeController {
     public void createSmsCode(HttpServletRequest request, HttpServletResponse response) throws IOException {
         SmsCode smsCode = createmsCode();
         //拿到当前请求的session，并把验证码存到session里面去
-        sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_KEY, smsCode);
+        sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_MS_KEY, smsCode);
         //模拟进行发送短信验证码的操作
         String mobile = request.getParameter("mobile");
         defaultSmsCodeSender.send(mobile, smsCode.getCode());

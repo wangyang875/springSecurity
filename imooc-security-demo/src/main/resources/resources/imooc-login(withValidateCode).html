@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 <h2>标准登录页面</h2>
@@ -25,7 +26,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <button type="submit" >登录</button>
+                <button type="submit">登录</button>
                 <!--<button type="submit" name="type" value="binding">绑定</button>-->
             </td>
         </tr>
@@ -42,16 +43,26 @@
             <td>短信验证码</td>
             <td>
                 <input type="text" name="smsCode">
-                <a href="/code/sms?mobile=18827406925">发送验证码</a>
+                <!--<a href="/code/sms?mobile=18827406925">发送验证码</a>-->
+                <input type="button" value="发送验证码" id='btnAjax'>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <button type="submit" >登录</button>
-                <!--<button type="submit" name="type" value="binding">绑定</button>-->
+                <button type="submit">登录</button>
             </td>
         </tr>
     </table>
 </form>
+<script type="text/javascript">
+    document.querySelector('#btnAjax').onclick = function () {
+        $.ajax({
+            url:"/code/sms?mobile=18827406925",    //请求的url地址
+            dataType:"json",   //返回格式为json
+            data:{"id":"value"},    //参数值
+            type:"GET"  //请求方式
+        });
+    }
+</script>
 </body>
 </html>

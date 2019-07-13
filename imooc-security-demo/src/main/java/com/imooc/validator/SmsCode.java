@@ -30,4 +30,10 @@ public class SmsCode {
         this.code = code;
         this.ex = LocalDateTime.now().plusSeconds(ex);
     }
+
+    public boolean isExpire() {
+        if (LocalDateTime.now().isAfter(ex))
+            return true;
+        return false;
+    }
 }
