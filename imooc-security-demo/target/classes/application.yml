@@ -17,3 +17,4 @@ imooc:
   security:
     browser:
       loginPage: /imooc-login(withValidateCode).html
+      loginType: REDIRECT

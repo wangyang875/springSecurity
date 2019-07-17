@@ -22,7 +22,7 @@ public class SmsCodeAuthencationProvider implements AuthenticationProvider {
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         SmsCodeAuthenticationToken token=(SmsCodeAuthenticationToken) authentication;
-        UserDetails userDetails=this.getUserDetailsService().loadUserByUsername( (String)token.getPrincipal());//这里获取的就是mobile
+        UserDetails userDetails=userDetailsService.loadUserByUsername( (String)token.getPrincipal());//这里获取的就是mobile
         if (userDetails==null){
             throw new InternalAuthenticationServiceException("无法获取用户信息");
         }
